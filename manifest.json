@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Creately Dark Theme",
+  "description": "Creately Dark Theme Extension.",
+  "version": "1.0",
+  "browser_action": {
+    "default_popup": "src/content.html",
+    "default_icon": "src/assets/icon.png"
+  },
+  "icons": {
+    "16": "src/assets/icon16.png",
+    "48": "src/assets/icon48.png",
+    "128": "src/assets/icon128.png"
+  },
+  "content_scripts": [{
+    "css": ["src/inject.css"],
+    "js": ["lib/index.cjs.js"],
+    "matches": ["https://app.creately.com/diagram/*"]
+  }],
+  "permissions": [
+    "activeTab",
+    "storage",
+    "declarativeContent"
+  ]
+}

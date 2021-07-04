@@ -1,0 +1,45 @@
+{
+  "name": "creately-dark-theme",
+  "author": "Novout",
+  "license": "MIT",
+  "version": "0.1.0",
+  "description": "Creately Dark Theme Extension.",
+  "main": "lib/index.cjs.js",
+  "module": "lib/index.esm.js",
+  "bundle": "lib/index.iife.js",
+  "contributors": [
+    "Giovane Cardoso <gcnovout@gmail.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Novout/creately-dark-theme"
+  },
+  "keywords": [
+    "creately",
+    "dark",
+    "theme"
+  ],
+  "files": [
+    "lib",
+    "package.json"
+  ],
+  "bugs": {
+    "url": "https://github.com/Novout/creately-dark-theme/issues"
+  },
+  "scripts": {
+    "build": "rm -rf ./lib && rollup -c",
+    "win:build": "rollup -c",
+    "postpublish": "git push && git push --tags"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.0",
+    "@babel/core": "^7.13.8",
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "rollup": "^2.38.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-dts": "^2.0.1",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
