@@ -1,6 +1,8 @@
 # Creately Dark Theme Extension
 
-![creately image example](./src/assets/creately.png)
+<a href="https://github.com/Novout/vue4noobs">
+  <img src="./src/assets/creately.png" alt="Logo" width="60%">
+</a>
 
 ## Why is it not published?
 
